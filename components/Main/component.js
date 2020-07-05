@@ -4,7 +4,8 @@
  */
 import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { Text, View, Button } from 'react-native';
+import { Text, View } from 'react-native';
+import { Button } from 'react-native-elements';
 import MainStyles from './style';
 
 const Main = (props) => {
@@ -12,7 +13,11 @@ const Main = (props) => {
   return (
     <View style={MainStyles.container}>
       <Text>{outputText}</Text>
-      <Button title="Change Text" onPress={() => setOutputText('The text has been changed!!')} />
+      <Button
+        title="Change Text"
+        type="solid"
+        onPress={() => setOutputText('The text has been changed!!')}
+      />
       <StatusBar style="auto" />
     </View>
   );

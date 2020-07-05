@@ -6,7 +6,12 @@
 import React from 'react';
 import Main from './components/Main';
 import GlobalStyles from './styles/GlobalStyles';
+import { ThemeProvider } from 'react-native-elements';
 
 export default function App() {
-  return <Main globalStyles={GlobalStyles}></Main>;
+  return (
+    <ThemeProvider>
+      <Main globalStyles={GlobalStyles}></Main>
+    </ThemeProvider>
+  );
 }
