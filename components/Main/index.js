@@ -1,4 +1,7 @@
 import React from 'react';
-import Main from './component';
+import AppMain from './component';
 
+const Main = () => {
+  return <AppMain />;
+};
 export default Main;

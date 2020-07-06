@@ -5,13 +5,18 @@
 
 import React from 'react';
 import Main from './components/Main';
+import { SafeAreaView } from 'react-native';
 import GlobalStyles from './styles/GlobalStyles';
 import { ThemeProvider } from 'react-native-elements';
 
-export default function App() {
+const App = () => {
   return (
-    <ThemeProvider>
-      <Main globalStyles={GlobalStyles}></Main>
-    </ThemeProvider>
+    <SafeAreaView style={GlobalStyles.container}>
+      <ThemeProvider>
+        <Main />
+      </ThemeProvider>
+    </SafeAreaView>
   );
-}
+};
+
+export default App;
