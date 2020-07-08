@@ -5,17 +5,17 @@
 
 import React from 'react';
 import Main from './components/Main';
-import { SafeAreaView } from 'react-native';
+import { View } from 'react-native';
 import GlobalStyles from './styles/GlobalStyles';
 import { ThemeProvider } from 'react-native-elements';
 
 const App = () => {
   return (
-    <SafeAreaView style={GlobalStyles.container}>
+    <View style={GlobalStyles.container}>
       <ThemeProvider>
         <Main />
       </ThemeProvider>
-    </SafeAreaView>
+    </View>
   );
 };
 

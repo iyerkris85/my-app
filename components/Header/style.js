@@ -5,9 +5,12 @@
 import { StyleSheet } from 'react-native';
 
 const HeaderStyles = StyleSheet.create({
-  headerText: {
+  centerText: {
     color: '#fff',
     flex: 1,
+    fontSize: 20,
+    fontWeight: 'bold',
+    padding: 10,
   },
 });
 
