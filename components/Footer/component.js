@@ -5,13 +5,14 @@ import React from 'react';
 import { View } from 'react-native';
 import FooterStyles from './style';
 import BaseMenuItem from '../BaseMenuItem';
+import basemenuconfiguration from '../../configuration/basemenu';
 
 const AppFooter = () => {
   return (
     <View style={FooterStyles.contentStyle}>
-      <BaseMenuItem name="1" />
-      <BaseMenuItem name="2" />
-      <BaseMenuItem name="3" />
+      {basemenuconfiguration.map((menu) => {
+        return <BaseMenuItem {...menu} />;
+      })}
     </View>
   );
 };

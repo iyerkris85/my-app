@@ -3,12 +3,14 @@
  */
 import React from 'react';
 import MenuItemStyles from './style';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import { Text, Icon } from 'react-native-elements';
 
 const AppBaseMenuItem = (props) => {
   return (
-    <View>
-      <Text>{props.name}</Text>
+    <View style={MenuItemStyles.viewStyle}>
+      <Icon name={props.icon} size={50} type={props.material} />
+      <Text>{props.label}</Text>
     </View>
   );
 };

@@ -4,7 +4,11 @@
 import { StyleSheet } from 'react-native';
 
 const MenuItemStyles = StyleSheet.create({
-  viewStyle: {},
+  viewStyle: {
+    flex: 1,
+    width: 30,
+    alignItems: 'center',
+  },
   iconStyle: {},
   textStyle: {},
 });
