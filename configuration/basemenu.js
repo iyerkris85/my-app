@@ -3,26 +3,26 @@
  */
 const basemenuconfiguration = [
   {
-    name: 'home',
-    link: '',
-    label: 'Home',
-    icon: 'home',
-    iconType: 'material',
-    key: 1,
-  },
-  {
     name: 'about',
     link: '',
     label: 'About',
     icon: 'face',
     iconType: 'material',
-    key: 2,
+    key: 1,
   },
   {
     name: 'help',
     link: '',
     label: 'Help',
     icon: 'help',
+    iconType: 'material',
+    key: 2,
+  },
+  {
+    name: 'clear',
+    link: '',
+    label: 'Clear All',
+    icon: 'clear',
     iconType: 'material',
     key: 3,
   },
