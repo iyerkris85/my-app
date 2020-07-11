@@ -14,6 +14,7 @@ const FooterStyles = StyleSheet.create({
     backgroundColor: '#C0C0C0',
     alignItems: 'center',
     flexDirection: 'row',
+    height: '12%',
   },
 });
 
