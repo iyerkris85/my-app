@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 const ToDoStyles = StyleSheet.create({
   container: {
-    height: '66%',
+    height: '78%',
     backgroundColor: '#fff',
   },
   todocontainer: {
