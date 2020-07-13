@@ -22,7 +22,7 @@ const AppTodoInput = (props) => {
 
   //Call Add Method in the prop
   const addButtonPress = () => {
-    if (inputToDo.length > 0 && inputToDo.trim().length > 0) {
+    if (inputToDo.length > 0 && inputToDo.trim().length > 0 && inputToDo.length < 30) {
       props.add(inputToDo);
     }
     clearInputTodo();
