@@ -23,7 +23,10 @@
   "devDependencies": {
     "@babel/core": "^7.14.0",
     "babel-preset-expo": "~8.1.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "lodash": ">=4.17.19",
+    "node-fetch": ">=2.6.1",
+    "y18n": ">=4.0.1"
   },
   "private": true
 }
